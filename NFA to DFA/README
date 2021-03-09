@@ -1,0 +1,20 @@
+Stoian Miruna Maria
+335CB
+Tema 2 - Subset Construction
+
+In functia step caut toate configuratiile in care pot ajunge din configuratia curenta intr-un singur pas si le adaug in lista.La final returnez lista
+In functia kstep apelez functia step si creez o noua lista in care
+adaug toate configuratiile in care se poate ajunge in k pasi dintr-o stare data.
+In epsilon closure combin toate inchiderile epsilon pentru starea curenta.
+
+construct_dfa
+In construct_dfa construiesc dfa-ul. 
+Pentru fiecare stare din lista de dfa-uri iau pe rand valori din alfabet si verific daca exista in nfa. Daca exista adaug in set. Pentru fiecare set din lista nou formata adaug inchiderile epsilon si formex noile stari.
+Daca starea nou formata nu se afla in lista de stari o adaug.
+La final adaug in list_of_finale_states noile stari finale si in statess numarul starilor finale.
+
+main:
+In main am folosit citirea implementata in laboratorul numarul 5.
+Iau starile pe rand iar pentru fiecare adaug ii adaug in dictionar inchiderea epsilon.
+Apelez functia de constructie a dfa-ului.
+In final afisez in fisier dfa-ul format.
