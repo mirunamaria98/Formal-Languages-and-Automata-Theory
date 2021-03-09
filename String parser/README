@@ -1,0 +1,23 @@
+STOIAN MIRUNA MARIA
+335CB
+
+main
+In main deschid fisierele si citesc cele doua stringuri.
+In continuare apelez functie ce creeza matricea delta cu litere pe prima linie si starile corespunzatoare pattern-ului pe care il caut in cuvant.
+Apelez functia de populare a matricei delta si afisez valorile de decalaj la care se gasește string1 în string2 separate de câte un spațiu.Pentru afisarea pozitiilor am folosit codul implementat la curs.
+
+delta:
+Vectorul "alfabet" este format din toate literele mari ale alfabetului 
+mai putin discriticele.
+Formez a doua linie cu prima stare empty reprezentata cu caracterul 'e' si in continuarea lui adaug alte 26 de zero-uri(cate unul pentru fiecare litera din 
+alfabet).
+Pornesc de la prima litera a stringului primit ca parametru in functie si pentru
+fiecare stare adaug zero-uri.La final returnez matricea.
+
+
+populate_matrix:
+Pentru a doua linie adaug 1 in dreptul primei litere de inceput a 
+stringului.
+In continuare formez un cuvant nou luand starile de pe prima coloana si
+adaug pe rand fiecare litera din alfabet. Daca se regasesc in spatiul starilor completez matricea cu starea urmatoare. si cu ajutorul variabilei "ok" opresc cautarea.Daca nu caut cel mai lung sufix care  se potriveste.
+La final returnez matricea starilor.
