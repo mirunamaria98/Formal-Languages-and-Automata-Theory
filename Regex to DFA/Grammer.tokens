@@ -1,0 +1,10 @@
+REUNIUNE=1
+OPEN=2
+CLOSED=3
+STAR=4
+WHITESPACE=5
+VAR=6
+'|'=1
+'('=2
+')'=3
+'*'=4

@@ -1,0 +1,14 @@
+Stoian Miruna Maria 335CB
+
+In implementarea acestei teme am pornit de la explicatiile  
+date la curs si am folosit antlr4 pentru parsarea inputului.
+In fisierul Grammer.g4 am creat o gramatica pe care o va folosi 
+programului de parsare.
+In GrammerVisitorPars in functie de expresia primita realizez 
+concatenari, reuniuni si operatia de star in functie de arborele de parsare obtinut. Pentru a implementa functiile "union", "concatenation" si "star" am urmarit schemele 1,2 si 3 atasate in arhiva.
+In GrammerVisitor am realizat o clasa numita NFA pentru a retine informatii despre nfa-ul construit.
+
+In main citesc expresia din fisier, o modific in asa fel incat
+sa nu existe * duplicat, suprascriu noua expresie in fisier si apoi
+trimit noua expresie spre parsare.
+Rezultatul intors este un nfa pe care il scriu in fisier iar apoi cu ajutorul temei 2 transform nfa-ul in dfa si il scriu si pe acesta in fisier.
